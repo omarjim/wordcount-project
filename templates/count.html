@@ -1,0 +1,17 @@
+<H1> Cu cu cu cuentame! </H1>
+
+<h1> Hay {{ cuenta }} palabras en tu texto </h1>
+
+<a href = "{% url 'home' %}"> Nuevo conteo </a>
+
+<h1> Texto completo original </h1>
+{{ texto }}
+
+<h1> Conteo de palabras </h1>
+
+{% for palabra, conteo in sortedDict %}
+
+  {{ palabra }}: {{ conteo }}
+  <br />
+
+{% endfor %}
